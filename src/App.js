@@ -39,7 +39,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Food Searching App</h1>
+      <div className="title">
+          <h1>Recipes</h1>
+          <div className="underline"></div>
+      </div>
       <form onSubmit={onSubmit} className="search-form">
         {alert !== "" && <Alert alert={alert} />}
         <input
